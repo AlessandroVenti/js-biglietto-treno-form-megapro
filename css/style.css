@@ -4,6 +4,105 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(241, 38, 106);
+}
+
 .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+div.container h2 {
+    flex-basis: 100%;
+    margin: 20px 0;
+    color: white;
+    font-size: 30px;
+}
+
+.row {
+    background-color: white;
+    margin-bottom: 50px;
+    flex-basis: 70%;
+}
+
+div.row div.input {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.row div.input div {
+    flex-basis: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25px;
+}
+
+div.row div.input div label,
+div.row div.input div input {
+    flex-basis: 100%;
+    margin: 10px 0;
+}
+div.row div.input div label {
+color: rgb(241, 38, 106);
+font-size: 20px;
+}
+
+div.row div.input div input {
+    border: 1px solid rgb(241, 38, 106);
+    height: 30px;
+    border-radius: 5px;
+}
+
+select {
+    flex-basis: 100%;
+}
+
+div.row div.action {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div.row div.action input {
+    margin: 30px 15px;
+    height: 30px;
+    background-color: lightgrey;
+    border: 1px solid rgb(241, 38, 106);
+    color: rgb(241, 38, 106);
+    width: 100px;
+}
+
+div.row div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+div.row div p,
+div.row div table {
+    flex-basis: 100%;
+    text-align: left;
+}
+
+div.row div p {
+    font-size: 30px;
+}
+
+table {
     border: 1px solid black;
+}
+
+table tbody tr td, 
+table thead tr th {
+    padding: 40px 0;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+    background-color: grey;
 }

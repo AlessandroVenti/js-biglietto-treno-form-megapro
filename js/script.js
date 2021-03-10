@@ -12,6 +12,8 @@ generaBtn.addEventListener('click', function() {
     var età = document.getElementById("età").value;
     console.log(name, distanza, età);
 
+    document.getElementById("thename").innerHTML = name;
+
     if(name !== "" && distanza > 0 && età !== "") {
         // console.log("ok");
         prezzoTotale = prezzoCorrente * distanza;
@@ -23,6 +25,7 @@ generaBtn.addEventListener('click', function() {
             // console.log("minorenne", età);
             var sconto = prezzoTotale * 0.2;
             prezzoTotale -= sconto;
+
             
         } else if (età === 3) {
             console.log("over65", età);
