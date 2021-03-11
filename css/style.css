@@ -21,12 +21,14 @@ div.container h2 {
     margin: 20px 0;
     color: white;
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .row {
     background-color: white;
     margin-bottom: 50px;
     flex-basis: 70%;
+    border-radius: 5px;
 }
 
 div.row div.input {
@@ -74,6 +76,7 @@ div.row div.action input {
     border: 1px solid rgb(241, 38, 106);
     color: rgb(241, 38, 106);
     width: 100px;
+    text-align: center;
 }
 
 div.row div {
@@ -95,6 +98,7 @@ div.row div p {
 
 table {
     border: 1px solid black;
+    border-right: 0;
 }
 
 table tbody tr td, 
@@ -105,4 +109,5 @@ table thead tr th {
 table thead tr th:first-child,
 table tbody tr td:first-child {
     background-color: grey;
+
 }
